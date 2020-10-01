@@ -1,0 +1,31 @@
+
+#! /usr/bin/Rscript
+
+---
+title: "Zoonotic and Foodborne Outbreaks"
+author: "INFO550 Jackie Roshelli"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+output: html_document
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE)
+```
+
+```{r, load-data}
+my_data <- read.xlsx(xlsxFile='NORS.xlsx')
+```
+
+## Review Data
+
+My data has `r nrow(my_data)` rows and `r ncol(my_data)` columns.
+
+## Data Visualization
+
+```{r, make-table}
+table(my_data$Year)
+```
+```{r, make-scatter}
+plot(my_data$Year, my_data$Illnesses)
+```
