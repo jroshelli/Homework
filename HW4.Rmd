@@ -1,6 +1,4 @@
 
-#! /usr/bin/Rscript
-
 ---
 title: "Zoonotic and Foodborne Outbreaks"
 author: "INFO550 Jackie Roshelli"
