@@ -5,6 +5,11 @@ author: "INFO550 Jackie Roshelli"
 date: "`r format(Sys.Date(), '%Y-%m-%d')`"
 output: html_document
 ---
+```{r, library-packages}
+library(openxlsx)
+library(haven)
+library(gtools)
+```
 
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
